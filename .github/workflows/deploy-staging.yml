@@ -9,10 +9,9 @@ env:
   ###############################################
   ### Replace <username> with GitHub username ###
   ###############################################
-  DOCKER_IMAGE_NAME: <BonoloMohlala8>-azure-ttt
-  AZURE_WEBAPP_NAME: <BonoloMohlala8>-ttt-app
+  DOCKER_IMAGE_NAME: BonoloMohlala8-azure-ttt
+  AZURE_WEBAPP_NAME: BonoloMohlala8-ttt-app
   ###############################################
-
 jobs:
   build:
     if: contains(github.event.pull_request.labels.*.name, 'stage')
