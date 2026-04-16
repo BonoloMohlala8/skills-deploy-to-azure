@@ -10,11 +10,10 @@ env:
   AZURE_APP_PLAN: actions-ttt-deployment
   AZURE_LOCATION: '"East US"'
   AZURE_WEBAPP_NAME: BonoloMohlala8-ttt-app
-
+  
 jobs:
   setup-up-azure-resources:
     runs-on: ubuntu-latest
-    if: contains(github.event.label.name, 'spin up environment')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
